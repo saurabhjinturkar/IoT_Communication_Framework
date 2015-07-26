@@ -1,8 +1,8 @@
 package sensor_project;
 
-import model.AbstractSensorData;
+import model.ISensorData;
 
 public interface IDataFormatter {
 
-	public String format(AbstractSensorData data);
+	public String format(ISensorData data);
 }

@@ -3,6 +3,8 @@
  */
 package sampleimplementation.sensor;
 
+import util.JsonFormatter;
+
 /**
  * @author Saurabh
  *
@@ -22,11 +24,12 @@ public class Client {
 		TemperatureSensor sensor4 = new TemperatureSensor();
 		TemperatureSensor sensor5 = new TemperatureSensor();
 		
-		System.out.println(sensor1.sense());
-		System.out.println(sensor2.sense());
-		System.out.println(sensor3.sense());
-		System.out.println(sensor4.sense());
-		System.out.println(sensor5.sense());
+		JsonFormatter formatter = new JsonFormatter();
+		
+		System.out.println(formatter.format(sensor1.sense()));
+		System.out.println(formatter.format(sensor2.sense()));
+		System.out.println(formatter.format(sensor3.sense()));
+		System.out.println(formatter.format(sensor4.sense()));
+		System.out.println(formatter.format(sensor5.sense()));
 	}
-
 }
