@@ -4,6 +4,13 @@
 	<groupId>sensor_project</groupId>
 	<artifactId>sensor_project</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<repositories>
+		<repository>
+			<id>Eclipse Paho Repo</id>
+			<url>https://repo.eclipse.org/content/repositories/paho-releases/</url>
+		</repository>
+	</repositories>
+
 	<build>
 		<sourceDirectory>src</sourceDirectory>
 		<plugins>
@@ -23,5 +30,11 @@
 			<artifactId>gson</artifactId>
 			<version>2.3.1</version>
 		</dependency>
+		<dependency>
+			<groupId>org.eclipse.paho</groupId>
+			<artifactId>org.eclipse.paho.client.mqttv3</artifactId>
+			<version>1.0.2</version>
+		</dependency>
+
 	</dependencies>
 </project>
