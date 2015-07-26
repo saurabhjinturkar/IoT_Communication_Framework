@@ -7,6 +7,5 @@ package sensor_project;
  * @author Saurabh
  *
  */
-public class AbstractSensor {
-
+public abstract class AbstractSensor implements ISensor {
 }
