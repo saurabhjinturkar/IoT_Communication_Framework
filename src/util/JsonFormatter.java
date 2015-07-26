@@ -1,7 +1,10 @@
 /**
  * 
  */
-package sensor_project;
+package util;
+
+import model.AbstractSensorData;
+import sensor_project.IDataFormatter;
 
 import com.google.gson.Gson;
 

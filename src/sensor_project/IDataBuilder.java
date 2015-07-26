@@ -3,6 +3,8 @@
  */
 package sensor_project;
 
+import model.AbstractSensorData;
+
 /**
  * @author Saurabh
  *
