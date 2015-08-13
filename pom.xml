@@ -35,14 +35,10 @@
 			<artifactId>org.eclipse.paho.client.mqttv3</artifactId>
 			<version>1.0.2</version>
 		</dependency>
-<<<<<<< HEAD
 		<dependency>
 			<groupId>log4j</groupId>
 			<artifactId>log4j</artifactId>
 			<version>1.2.17</version>
 		</dependency>
-=======
->>>>>>> e92a6fd5574c2020992a2c81b9e1ee00e64997a2
-
 	</dependencies>
 </project>

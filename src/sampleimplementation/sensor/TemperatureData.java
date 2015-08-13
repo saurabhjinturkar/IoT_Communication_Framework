@@ -5,6 +5,8 @@ package sampleimplementation.sensor;
 
 import java.util.Date;
 
+import javax.xml.bind.annotation.XmlRootElement;
+
 import model.AbstractSensorData;
 import sensor_project.PriorityLevel;
 
@@ -12,6 +14,7 @@ import sensor_project.PriorityLevel;
  * @author Saurabh
  *
  */
+@XmlRootElement
 public class TemperatureData extends AbstractSensorData {
 
 	private static final long serialVersionUID = 1L;
@@ -20,6 +23,9 @@ public class TemperatureData extends AbstractSensorData {
 	private Date timestamp;
     private long sensorId;
 	
+    public TemperatureData() {
+    }
+    
 	public TemperatureData(long sensorID) {
 		priority = PriorityLevel.MEDIUM;
 		timestamp = new Date();

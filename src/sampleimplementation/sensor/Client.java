@@ -3,7 +3,9 @@
  */
 package sampleimplementation.sensor;
 
+import sensor_project.IDataFormatter;
 import util.JsonFormatter;
+import util.XMLFormatter;
 
 /**
  * @author Saurabh
@@ -24,8 +26,8 @@ public class Client {
 		TemperatureSensor sensor4 = new TemperatureSensor();
 		TemperatureSensor sensor5 = new TemperatureSensor();
 		
-		JsonFormatter formatter = new JsonFormatter();
-		
+//		JsonFormatter formatter = new JsonFormatter();
+		IDataFormatter formatter = new XMLFormatter();
 		System.out.println(formatter.format(sensor1.sense()));
 		System.out.println(formatter.format(sensor2.sense()));
 		System.out.println(formatter.format(sensor3.sense()));
