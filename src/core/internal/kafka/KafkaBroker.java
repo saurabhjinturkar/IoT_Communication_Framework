@@ -64,4 +64,10 @@ public class KafkaBroker extends AbstractBroker {
 			System.out.println(e);
 		}
 	}
+	
+	@Override
+	public void fetch() {
+	    super.fetch();
+	    
+	}
 }
